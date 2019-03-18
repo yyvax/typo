@@ -40,7 +40,7 @@ class Admin::CategoriesController < Admin::BaseController
       end
       return
     end
-    render 'new/1'
+    render 'new'
   end
 
   def save_category
