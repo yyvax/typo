@@ -11,6 +11,7 @@ class Admin::CategoriesController < Admin::BaseController
         @category = Category.new
       }
     end
+    flash[:notice] = params
   end
 
   def destroy
@@ -39,7 +40,7 @@ class Admin::CategoriesController < Admin::BaseController
       end
       return
     end
-    render 'new'
+    render 'new/1'
   end
 
   def save_category
