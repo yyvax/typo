@@ -11,7 +11,7 @@ class Admin::CategoriesController < Admin::BaseController
         @category = Category.new
       }
     end
-    flash[:notice] = params
+    # flash[:notice] = params
   end
 
   def destroy
